@@ -253,7 +253,6 @@ input[type="search"]:focus {
 }
 
 .slider-text {
-    /*width: 40%;*/
     width: 589px;
     min-height: 156px;
     text-align: center;
