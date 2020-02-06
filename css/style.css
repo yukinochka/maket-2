@@ -1,13 +1,28 @@
 body {
     margin: 0 0 0 0;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Raleway', sans-serif;
+
 }
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
 
 .container {
     width: 1920px;
     margin: 0 auto;
+
 }
 
 /*Блок 1*/
@@ -20,6 +35,7 @@ body {
     background-size: cover;
     background-position: top;
     background-blend-mode: darken;
+
 }
 
 .slider-menu {
@@ -43,22 +59,27 @@ body {
   
 .logo-link:hover .logo-icon {
     fill: #c7b299;
+
 }
   
 .logo-link:hover .logo-span {
     color: #c7b299;
+
 }
   
 .logo-link:active .logo-icon {
     fill: #998675;
+
 }
   
 .logo-link:active .logo-span {
     color: #998675;
+
 }
   
 .logo-icon {
     fill: CurrentColor;
+
 }
   
 .logo-span {
@@ -68,21 +89,30 @@ body {
     font-weight: 400;
     letter-spacing: -0.04em;
     color: #ffffff;
+
 }
 
 .menu {
-    float: right;
+    display: flex;
+
 }
 
 .menu-list {
     list-style-type: none;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+
 }
 
 .menu-list-item {
     padding: 0 30px 0 0;
     display: inline-block;
+
+}
+
+.menu-list-item:last-child {
+    padding: 0 68px 0 0;
+
 }
 
 .menu-link {
@@ -91,30 +121,159 @@ body {
     font-size: 14px;
     line-height: 1.2;
     font-weight: 300;
-    color: #ffffff;    
+    color: #ffffff;
+
 }
 
 .menu-link:hover {
     color: #c7b299;
+
 }
 
 .menu-link:active {
     color: #998675;
+
+}
+
+.button-basket {
+    background-image: url(../img/icon-cart.png);
+    background-color: transparent;
+    outline: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 24px;
+    border: none;
+    margin: 0 28px 0 0;
+
+}
+
+.button-basket:hover {
+    background-image: url(../img/icon-cart_hover.png);
+   
+}
+
+.button-basket:active {
+    background-image: url(../img/icon-cart-active.png);
+    
+}
+
+input[type="search"] {
+    width: 24px;
+    height: 24px;
+    outline: none;
+    background-image: url(../img/icon-search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+
+}
+  
+input[type="search"]:focus {
+    width: 150px;
+    transition: width 1s ease-out;
+    background-position: right;
+    border-bottom: 1px solid #ffffff;
 }
 
 /*Блок 1-1*/
+
+.slider-carousel {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 285px auto;
+    position: relative;
+
+}
+
+
+.slider-arrow {
+    display: block;
+    width: 40px;
+    height: 73px;
+    position: absolute;
+
+}
+
+.slider-arrow:nth-of-type(1) {
+    left: 150px;
+
+}
+  
+.slider-arrow:nth-of-type(2) {
+    right: 150px;
+
+}
+
+.slider-arrow:nth-of-type(2):after {
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    left: -25px;
+    
+}
+
+.slider-arrow:nth-of-type(1):after {
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    left: -25px;
+
+}
+ 
+.slider-arrow:nth-of-type(2):hover:after {
+    border-top: 2px solid #d3c1ad;
+    border-right: 2px solid #d3c1ad;
+    
+}
+
+.slider-arrow:nth-of-type(1):hover:after {
+    border-bottom: 2px solid #d3c1ad;
+    border-left: 2px solid #d3c1ad;
+    
+}
+
+.slider-text {
+    /*width: 40%;*/
+    width: 589px;
+    min-height: 156px;
+    text-align: center;
+    
+}
 
 .slider-h2 {
     color: #ffffff;
     font-family: Raleway;
     font-size: 36px;
     font-weight: 500;
+    margin: 0 0 14px 0;
 }
 
 .slider-h1 {
+    font-family: Raleway;
     color: #ffffff;
     font-size: 52px;
-    font-weight: 400;
+    font-weight: 800;
+    margin: 0 0 19px 0;
 }
 
 .slider-content {
@@ -123,4 +282,244 @@ body {
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
+    margin: 0 0 52px 0;
+    
 }
+
+.button {
+    display: block;
+    width: 170px;
+    height: 53px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 23px;
+    text-transform: uppercase;
+    box-shadow: inset 0 -3px 0 #736357;
+    word-break: break-all;
+    border-radius: 3px;
+    background-color: #998675;
+    border: 1px solid #111111;
+    outline: none;
+
+}
+
+.button:hover {
+    box-shadow: inset 0 -3px 0 #493f37;
+    border: 1px solid #ffffff;
+    background-color: #555555;
+}
+
+.button:active {
+    box-shadow: inset 0 -3px 0 transparent;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    
+}
+
+.button-center {
+    margin: 0 auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 98px;
+    margin: 0 auto;
+}
+
+.circle {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    opacity: 0.5;
+    
+
+}
+  
+.circle:hover {
+    background-color: transparent;
+    border: 2px solid #d3c1ad;
+    transform: scale(1.2);
+}
+
+
+/*Блок 2*/
+
+.services {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 80px 0 80px 0;
+
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 266px;
+    min-height: 213px;
+    margin: 0 33px 0 0;
+    box-sizing: border-box;
+    
+}
+  
+.services-content:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;;
+}
+  
+.services-content:hover .services-content-icon {
+    fill: #c7b299;
+}
+  
+.services-content:hover .services-content-h2 {
+    color:#c7b299;;
+}
+  
+.services-content:hover:after {
+    background-color: #c7b299;;
+}
+  
+.services-content-icon {
+    display: block;
+    fill: #555555;
+    margin: 0 0 29px 0;
+}
+  
+.services-content-h2 {
+    width: 100%;
+    margin: 0 0 19px 0;
+    text-align: center;
+    color: #555555;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 600;
+}
+  
+.services-content-p {
+    text-align: center;
+    width: 100%;
+    min-height: 62px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0 30px 0;
+}
+
+/*Блок 3*/
+
+.realization {
+    background-color: #fbfaf8;
+    padding: 83px 0 0 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.realization-h2 {
+    color: #555555;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+    text-align: center;
+}
+
+.realization-p {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    width: 770px;
+    min-height: 43px;    
+}
+
+.realization-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.realization-img-item:first-child {
+    position: absolute;
+    top: 82px;
+    left: 344px;
+    z-index: 1;
+    
+}
+  
+.realization-img-item:nth-child(2) {
+    margin: 0 auto;
+    z-index: 2;
+}
+  
+.realization-img-item:last-child {
+    position: absolute;
+    top: 82px;
+    right: 344px;
+    z-index: 1;
+}
+
+/*Блок 4*/
+
+.purchase-now {
+    width: 100%;
+    min-height: 150px;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    background-color: #f4f5f8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.purchase-now-text {
+    width: 530px;
+}
+
+.purchase-now-h2 {
+    margin: 0 0 8px 0;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 400;
+    /*word-spacing: normal;*/
+    
+}
+
+.purchase-now-span {
+    color: #c7b299;
+    margin: 0 10px 0 0;
+}
+
+.purchase-now-p {
+    margin: 0 0 0 0;
+    color: #615855;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+
+
+
