@@ -24,6 +24,12 @@
                     </svg>
                     <span class="logo-span">Waxom</span>
                 </a>
+                <input type="checkbox" id="check-menu">
+                    <label for="check-menu"></label>
+                    <div class="burger-line first"></div>
+                    <div class="burger-line second"></div>
+                    <div class="burger-line third"></div>
+                    <div class="burger-line fourth"></div>
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-list-item"><a href="#" class="menu-link">Home</a></li>
@@ -36,10 +42,10 @@
                         <li class="menu-list-item"><a href="#" class="menu-link">Contact</a></li>
                     </ul>
                     <button class="button-basket"></button>
-                </nav>
-                <form class="search-form" action="#" method="post">
-                    <input type="search" name="search-menu" id="search">
-                </form>
+                    <form class="search-form" action="#" method="post">
+                        <input type="search" name="search-menu" id="search">
+                    </form>
+                </nav>    
             </div>
             <section class="slider-carousel">
                 <a href="#" class="slider-arrow"></a>
@@ -312,6 +318,8 @@
                         lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores
                         legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum
                         clari, fiant sollemnes in futurum.</p>
+                    <img src="img/iPhone_in_hand.png" alt="iPhone_in_hand" width="50%" height="50%"
+                        class="devices-img-mobile">
                     <ul class="devices-text-list">
                         <li class="devices-text-item">Nam liber tempor cum soluta nobis eleifend option;</li>
                         <li class="devices-text-item">Option congue nihil imperdiet doming id quod mazim placerat facer;
@@ -445,14 +453,22 @@
                 </div>
             </section>
             <section class="partners">
-                <a class="partners-link" href="#"><img class="partners-link-img" src="img/logo-01.png" alt="logo-01"
-                        width="210" height="127"></a>
-                <a class="partners-link" href="#"><img class="partners-link-img" src="img/logo-02.png" alt="logo-02"
-                        width="210" height="210"></a>
-                <a class="partners-link" href="#"><img class="partners-link-img" src="img/logo-03.png" alt="logo-03"
-                        width="210" height="130"></a>
-                <a class="partners-link" href="#"><img class="partners-link-img" src="img/logo-04.png" alt="logo-04"
-                        width="210" height="164"></a>
+                <a class="partners-link" href="#">
+                    <img class="partners-link-img" src="img/logo-01.png" alt="logo-01" width="210" height="127">
+                    <img class="partners-link-img-mobile" src="img/logo-01.png" alt="logo-01" width="70" height="44">
+                </a>
+                <a class="partners-link" href="#">
+                    <img class="partners-link-img" src="img/logo-02.png" alt="logo-02" width="210" height="210">
+                    <img class="partners-link-img-mobile" src="img/logo-02.png" alt="logo-02" width="70" height="70">
+                </a>
+                <a class="partners-link" href="#">
+                    <img class="partners-link-img" src="img/logo-03.png" alt="logo-03" width="210" height="130">
+                    <img class="partners-link-img-mobile" src="img/logo-03.png" alt="logo-03" width="70" height="44">
+                </a>
+                <a class="partners-link" href="#">
+                    <img class="partners-link-img" src="img/logo-04.png" alt="logo-04" width="210" height="164">
+                    <img class="partners-link-img-mobile" src="img/logo-04.png" alt="logo-04" width="70" height="55">
+                </a>
             </section>
         </main>
         <footer>
@@ -480,51 +496,54 @@
                     </a>
                     <a class="footer-post-a" href="#">
                         <span class="footer-post-date">September 08, 2015</span>
-                        <span class="footer-post-text">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</span>
+                        <span class="footer-post-text">Diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna</span>
                     </a>
                     <a class="footer-post-a" href="#">
                         <span class="footer-post-date">September 08, 2015</span>
-                        <span class="footer-post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta
+                        <span class="footer-post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                            per seacula quarta
                             decima</span>
                     </a>
                 </article>
                 <div class="footer-social-item footer-item-margin">
                     <span class="footer-social-title">Our Twitter</span>
                     <article class="footer-twitter-post">
-                            <span class="footer-twitter-text"><a href="#">@waxom</a>Cum soluta nobis eleifend option congue nihil imperdiet doming</span> 
-                            <span class="footer-twitter-date">3 mins ago</span>
+                        <span class="footer-twitter-text"><a href="#">@waxom</a>Cum soluta nobis eleifend option congue
+                            nihil imperdiet doming</span>
+                        <span class="footer-twitter-date">3 mins ago</span>
                     </article>
                     <article class="footer-twitter-post">
-                        <span class="footer-twitter-text">Mirum est <a href="#">#envato</a>notare quam littera gothica, quam nunc putamus parum anteposuerit
-                            litterarum</span> 
+                        <span class="footer-twitter-text">Mirum est <a href="#">#envato</a>notare quam littera gothica,
+                            quam nunc putamus parum anteposuerit
+                            litterarum</span>
                         <span class="footer-twitter-date">5 hours ago</span>
                     </article>
                     <article class="footer-twitter-post">
-                        <span class="footer-twitter-text">Soluta nobis option <a href="http://bit.ly/1Hniso7">bit.ly/1Hniso7</a></span> 
+                        <span class="footer-twitter-text">Soluta nobis option <a
+                                href="http://bit.ly/1Hniso7">bit.ly/1Hniso7</a></span>
                         <span class="footer-twitter-date">20 days ago</span>
                     </article>
                 </div>
                 <article class="footer-social-item footer-item-margin">
                     <span class="footer-social-title">Dribbble Widget</span>
-                    <img src="img/photo_10.jpg" alt="photo_10" width="130" height="98">
-                    <img src="img/photo_11.jpg" alt="photo_11" width="130" height="98">
-                    <img src="img/photo_12.jpg" alt="photo_12" width="130" height="98">
-                    <img src="img/photo_13.jpg" alt="photo_13" width="130" height="98">
+                    <img class="footer-social-img" src="img/photo_10.jpg" alt="photo_10" width="130" height="98">
+                    <img class="footer-social-img" src="img/photo_11.jpg" alt="photo_11" width="130" height="98">
+                    <img class="footer-social-img" src="img/photo_12.jpg" alt="photo_12" width="130" height="98">
+                    <img class="footer-social-img" src="img/photo_13.jpg" alt="photo_13" width="130" height="98">
                 </article>
             </section>
             <section class="footer-copyright">
-                <div>
-                    <span>Copyright &copy; 2015 Waxom</span>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </nav>
+                <div class="footer-copyright-item">
+                    <span class="footer-copyright-text">Copyright &copy; 2015 <a href="#">Waxom</a></span>
+                    <a class="footer-copyright-link" href="#">Privacy Policy</a>
+                    <a class="footer-copyright-link" href="#">FAQ</a>
+                    <a class="footer-copyright-link" href="#">Support</a>
                 </div>
-                <p>Designed by <span>ThemeFire</span></p>
-                <p>Only on <span>Envato Market</span></p>
+                <div class="footer-copyright-item">
+                    <span class="footer-copyright-text">Designed by <a href="#">ThemeFire</a></span>
+                    <span class="footer-copyright-text">Only on <a href="#">Envato Market</a></span>
+                </div>
             </section>
         </footer>
     </div>
